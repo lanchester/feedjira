@@ -20,6 +20,7 @@ module Feedjira
       element :"docs:md5Checksum", :as => :checksum
       element :"docs:filename", :as => :original_filename
       element :"docs:suggestedFilename", :as => :suggested_filename
+      elements :"dc:subject", :as => :tags
 
       def url
         @url ||= links.first

@@ -31,6 +31,7 @@ module Feedjira
         elements :category, :as => :categories
 
         element :guid, :as => :entry_id
+        elements :"dc:subject", :as => :tags
 
         def url
           @url || @link

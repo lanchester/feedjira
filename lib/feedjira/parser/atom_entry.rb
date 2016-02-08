@@ -23,6 +23,7 @@ module Feedjira
       element :modified, :as => :updated
       elements :category, :as => :categories, :value => :term
       elements :link, :as => :links, :value => :href
+      elements :"dc:subject", :as => :tags
 
       def url
         @url ||= links.first
